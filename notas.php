@@ -1,8 +1,10 @@
 <?php
+    header("Location: index.php");
+
 
     if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
-    $notaIntroducida=$_POST['texto'];
+    $notaIntroducida=($_POST['nombre']).": ".($_POST['texto']);
 
     $notas="notas.txt";
 
@@ -10,6 +12,5 @@
     fwrite($abrir, $notaIntroducida . PHP_EOL);
     fclose($abrir);
     }
-
 
 ?>

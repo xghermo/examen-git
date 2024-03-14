@@ -11,8 +11,9 @@
     <h2>¡¡¡Bienvenid@s a la mayor comunidad blogger de todo el localhost!!! XD</h2>
 
     <form action="notas.php" method="POST">
-        <label for="texto"></label>
-        <textarea name="texto" id="texto" cols="50" rows="5" placeholder="Escribe aquí tus experiencias, anecdotas o lo que te apetezca compartir con esta nuestra comunidad (L)(L)"></textarea>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre :)" required>
+        <br>
+        <textarea name="texto" id="texto" cols="50" rows="5" placeholder="Escribe aquí tus experiencias, anecdotas o lo que te apetezca compartir con esta nuestra comunidad (L)(L)" required></textarea>
         <br>
         <button>COMPARTIR! XD</button>
     </form>
