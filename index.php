@@ -19,13 +19,15 @@
     </form>
 
     <section id="notas" name="notas">
-        <h3>Notas compartidas xp:</h3>
+        <h3>Notas compartidas:</h3>
     </section>
 
         <script>
             function mandar(){
 
-                let laLista=document.getElementById("texto").value;
+                let nombre=document.getElementById("nombre").value;
+                let texto=document.getElementById("texto").value;
+                let laLista=nombre+": "+texto;
            
                 (async () => {
                     try {
@@ -45,33 +47,17 @@
                         if (response.ok) {
 
                             let datos = await response.json();
-                            // document.getElementById("notas").text=datos;
-                            // mostrarTextoGuardado();
-                            
+                            console.log("Datos introcudidos: "+datos)
 
                         } else {
                             throw new Error(response.statusText);
                         }
 
                     } catch (err) {
-
                         console.log("Error al realizar la petición AJAX: " + err.message);
                     }
                 })();
                 }
-
-            // function mostrarTextoGuardado() {
-            // var xhr = new XMLHttpRequest();
-            // xhr.open("GET", "notas.txt", true);
-            // xhr.onreadystatechange = function() {
-            //     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            //         document.getElementById("notas").innerHTML = xhr.responseText;
-            //     }
-            // };
-            // xhr.send();
-}
-
-
 
         </script>
 

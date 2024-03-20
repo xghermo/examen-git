@@ -1,12 +1,10 @@
 <?php
 
-header("Location: index.php");
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $texto = $_POST['texto']; // Obtiene el texto enviado desde el formulario
+    header("Location: index.php");
+
+    $datos = json_decode(file_get_contents('php://input'));
 
     $archivo = 'notas.txt';
-    file_put_contents($archivo, $texto . PHP_EOL, FILE_APPEND); // Guarda el texto en el archivo
-
-}
+    file_put_contents($archivo, $datos . PHP_EOL, FILE_APPEND);
 
  ?>
