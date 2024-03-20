@@ -1,16 +1,10 @@
 <?php
-    header("Location: index.php");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $texto = $_POST['texto']; // Obtiene el texto enviado desde el formulario
 
+    $archivo = 'notas.txt';
+    file_put_contents($archivo, $texto . PHP_EOL, FILE_APPEND); // Guarda el texto en el archivo
 
-    if ($_SERVER["REQUEST_METHOD"]=="POST"){
+}
 
-    $notaIntroducida=($_POST['nombre']).": ".($_POST['texto']);
-
-    $notas="notas.txt";
-
-    $abrir=(fopen($notas,"a"));
-    fwrite($abrir, $notaIntroducida . PHP_EOL);
-    fclose($abrir);
-    }
-
-?>
+ ?>
