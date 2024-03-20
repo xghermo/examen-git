@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el contenido del body */
+}
+
+h1 {
+    margin-top: 50px; /* Espacio superior para separar el h1 del borde superior */
+}
+
+form {
+    display: inline-block; /* Hace que el formulario se comporte como un bloque en línea */
+    text-align: center; /* Alinea el contenido del formulario a la izquierda */
+    margin-top: 20px; /* Espacio superior para separar el formulario del h1 */
+}
+
+section {
+    width: 80%; /* Ancho del section */
+    margin: 20px auto; /* Margen superior e inferior automático para centrar el section horizontalmente */
+    padding: 20px; /* Espaciado interno del section */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el botón del formulario */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
