@@ -19,7 +19,7 @@
     </form>
 
     <section id="notas" name="notas">
-        <h3>Notas compartidas xp:</h3>
+        <h3 onclick="mandar()">Notas compartidas xp:</h3>
 
         <?php
 
