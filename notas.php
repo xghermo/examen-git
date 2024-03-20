@@ -1,4 +1,6 @@
 <?php
+
+header("Location: index.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $texto = $_POST['texto']; // Obtiene el texto enviado desde el formulario
 
