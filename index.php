@@ -9,9 +9,9 @@
 <body>
     <h1>COMUNIDAD BLOGGER</h1>
 
-    <h2>¡¡¡Bienvenid@s a la mayor comunidad blogger de todo el localhost!!! XD</h2>
-
     <form action="notas.php" method="POST">
+        <h2>¡¡¡Bienvenid@s a la mayor comunidad blogger de todo el localhost!!! XD</h2>
+
         <input type="text" name="nombre" id="nombre" placeholder="Nombre :)" required>
         <br>
         <br>
@@ -22,7 +22,7 @@
     </form>
 
     <section id="notas" name="notas">
-        <h3>Notas compartidas xp:</h3>
+        <h3>Notas compartidas:</h3>
 
         <?php
 
