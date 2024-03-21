@@ -1,7 +1,5 @@
 <?php
 
-    header("Location: index.php");
-
     $datos = json_decode(file_get_contents('php://input'));
 
     $archivo = 'notas.txt';

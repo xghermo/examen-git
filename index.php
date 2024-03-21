@@ -9,7 +9,7 @@
 <body>
     <h1>COMUNIDAD BLOGGER</h1>
 
-    <form action="notas.php" method="POST">
+    <form action="index.php" method="POST">
         <h2>¡¡¡Bienvenid@s a la mayor comunidad blogger de todo el localhost!!! XD</h2>
 
         <input type="text" name="nombre" id="nombre" placeholder="Nombre :)" required>
